@@ -5,7 +5,9 @@ const pool = new Pool({
   database: "hajji",
   password: "12df2d0ffe0b091b10c4b9e2f3bbd991854729174a85b422a538a849f27caf77", //"0000",
   port: 5432, // 5433,
-  ssl:true
+    ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 const getCrimesByWards = (request, response) => {
