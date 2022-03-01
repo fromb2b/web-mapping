@@ -7,7 +7,7 @@ const pool = new Pool({
   port: 5432, // 5433,
     ssl: {
     rejectUnauthorized: false,
-  },
+  }
 });
 
 const getCrimesByWards = (request, response) => {
