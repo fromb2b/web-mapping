@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const db = require("./queries");
-const port =  = process.env.PORT || 80;
+const port = process.env.PORT || 80;
 const bodyParser = require("body-parser");
 app.use(cors());
 // parse application/x-www-form-urlencoded
